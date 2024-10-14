@@ -58,11 +58,12 @@ body, ul, li, h1, h2, a {
   
   a.join {
     background: linear-gradient(to bottom right, red 0%, rgb(255, 230, 0) 100%);
-    -webkit-text-stroke: 0.2px black;
+    color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 600;
   }
+  
   
   nav ul {
     list-style: none;
@@ -185,13 +186,20 @@ body, ul, li, h1, h2, a {
     border-radius: 3px;
   }
   
-  a.join:hover {
-    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0.6) 100%);
-    -webkit-text-stroke: 0.3px rgba(255, 0, 0, 0.6);
+  a.join, a.join:hover {
+    background: linear-gradient(to bottom right, red 0%, rgb(255, 230, 0) 100%);
+    color: transparent; /* Default color for fallback */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 600;
+  
+    /* Specific to :hover */
+    a.join:hover {
+      background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0.6) 100%);
+      -webkit-text-stroke: 0.3px rgba(255, 0, 0, 0.6);
+    }
   }
+  
   
   nav li a:hover {
     color: rgba(255, 0, 0, 0.6);
