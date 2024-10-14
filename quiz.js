@@ -17,6 +17,39 @@ const questions = [
     ],
   },
   {
+    question: "In which year was the Nintendo DS released in Europe?",
+    answers: [
+      { text: "2004", correct: false },
+      { text: "2005", correct: true },
+      { text: "2006", correct: false },
+    ],
+  },
+  {
+    question:
+      "What is the name of the evil wizard in the Legend of Zelda series?",
+    answers: [
+      { text: "Ganondorf", correct: false },
+      { text: "Ganon", correct: true },
+      { text: "Zant", correct: false },
+    ],
+  },
+  {
+    question: "What was the original name of the Nintendo Wii(pre-release)?",
+    answers: [
+      { text: "Revolution", correct: true },
+      { text: "Wii U", correct: false },
+      { text: "GameCube 2", correct: false },
+    ],
+  },
+  {
+    question: "In which Super Mario game does Mario first encounter Yoshi?",
+    answers: [
+      { text: "Super Mario World", correct: true },
+      { text: "Super Mario Bros. 3", correct: false },
+      { text: "Super Mario Land", correct: false },
+    ],
+  },
+  {
     question: "Where was Nintendo founded?",
     answers: [
       { text: "Kyoto", correct: false },
